@@ -7,7 +7,7 @@ RUN apt-get update && \
 	apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install php-ext
-RUN docker-php-ext-install intl mbstring pdo_mysql zip
+RUN docker-php-ext-install gd intl mbstring pdo_mysql zip
 
 
 # Install Composer
